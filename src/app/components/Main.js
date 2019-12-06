@@ -8,8 +8,11 @@ class Main extends React.Component {
 
     render() {
         return <>
+
+            This is Main
             <Switch>
                 <Route exact path='/' />
+                <Route exact path='/about' />
 
             </Switch>
         </>

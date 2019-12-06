@@ -7,7 +7,7 @@ class Footer extends React.Component {
 
 
     render() {
-        return <h1>ggtggt</h1>
+        return <h1>Footer</h1>
     }
 
 }
