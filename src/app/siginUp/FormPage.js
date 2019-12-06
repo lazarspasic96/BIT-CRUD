@@ -2,7 +2,9 @@ import React from "react";
 import { MDBContainer, MDBRow, MDBCol, MDBCard, MDBCardBody, MDBInput, MDBBtn, MDBIcon, MDBModalFooter } from 'mdbreact';
 const FormPage = () => {
     return (
-        <MDBContainer>
+
+
+        <MDBContainer className='formPage'>
             <MDBRow>
                 <MDBCol md="6">
                     <MDBCard>
@@ -88,6 +90,7 @@ const FormPage = () => {
                 </MDBCol>
             </MDBRow>
         </MDBContainer>
+
     );
 };
 
