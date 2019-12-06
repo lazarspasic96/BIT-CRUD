@@ -7,9 +7,11 @@ class Footer extends React.Component {
 
 
     render() {
-        return <h1>Footer</h1>
+        return <footer class="page-footer font-small blue fixed-bottom ">
+            <div class="footer-copyright text-center py-3">© {new Date().getFullYear()} Copyright:
+        </div>
+        </footer>
     }
-
 }
 
 
