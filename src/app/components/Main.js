@@ -10,7 +10,7 @@ class Main extends React.Component {
 
 
     render() {
-        return <main>
+        return <>
 
             <Switch>
                 <Route exact path='/'>
@@ -22,7 +22,9 @@ class Main extends React.Component {
                 </Route>
 
             </Switch>
-        </main>
+
+        </>
+
 
 
     }
