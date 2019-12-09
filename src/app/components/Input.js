@@ -6,7 +6,7 @@ const Input = (props) => {
     return (
 
 
-        <label> <input value={props.value} name={props.name} onChange={props.onChange} /> </label>
+        <label> {props.label}<input value={props.value} name={props.name} onChange={props.onChange} /> </label>
 
 
     )
