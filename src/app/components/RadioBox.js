@@ -15,3 +15,5 @@ class RadioBox extends React.Component {
         </>
     }
 }
+
+export default RadioBox;
