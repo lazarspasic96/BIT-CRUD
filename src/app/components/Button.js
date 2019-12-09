@@ -5,7 +5,7 @@ const Button= (props)=>{
 
     return (
 
-        <button  type="button"  obClickButton={onClickButton}>{props.text} </button>  
+        <button  type="button"  onClick="onClick()">{props.text} </button>  
          )
 }
 export default Button;
