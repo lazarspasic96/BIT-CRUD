@@ -1,0 +1,24 @@
+.main-logo {
+    padding: 0px 0px 0px 17px;
+    margin-top:20px;
+    display: inline-block;
+    color:white;
+  
+
+}
+
+.header-container{
+    height:60px;
+   background-color: #4154b3;
+}
+
+.nav-link{
+    margin-top:-40px;
+    color:white;
+    
+} 
+.nav-link:hover {
+    color:lightsalmon;
+  }
+
+    
