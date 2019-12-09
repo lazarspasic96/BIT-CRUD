@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import FormPage from '../siginUp/FormPage';
 import AboutPage from './AboutPage/AboutPage';
 import Checkbox from './Checkbox';
-
+import Header from './Header/Header';
 
 class Main extends React.Component {
 
@@ -17,11 +17,14 @@ class Main extends React.Component {
             <Route exact path='/about' >
                 <AboutPage />
 
+
             </Route>
         </Switch>
 
 
         </>
+
+
     }
 
 }
