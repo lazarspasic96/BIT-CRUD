@@ -1,18 +1,37 @@
 import React from "react";
 import './Style.css'
+import Checkbox from "../components/Checkbox";
 /* import './SiginUpInteractive.js' */
 
-const FormPage = () => {
-    return (
-        <main className='FormLandingPage'>
+
+
+
+class FormPage extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            overlayForm: true
+        }
+
+
+
+    }
+
+
+    handleClick = () => {
+        this.setState({ overlayForm: !this.state.overlayForm })
+    }
+
+    render() {
+        return <main className='FormLandingPage'>
             {/*    <div class="imgDiv">
-                <img src="https://jekyllrb.com/img/octojekyll.png" alt="" />
-                <img src="https://digio.com.au/wp-content/uploads/2018/04/react-native-logo.png" alt="" />
-
-
-
-            </div> */}
-            <div class="containerForm" id="container">
+                    <img src="https://jekyllrb.com/img/octojekyll.png" alt="" />
+                    <img src="https://digio.com.au/wp-content/uploads/2018/04/react-native-logo.png" alt="" />
+    
+    
+    
+                </div> */}
+            <div id="containerForm" className={this.state.overlayForm ? '' : 'right-panel-active'}>
                 <div class="form-container sign-up-container">
                     <form action="#">
                         <h1>Create Account</h1>
@@ -25,7 +44,8 @@ const FormPage = () => {
                         <input type="text" placeholder="Name" className='inputForm' />
                         <input type="email" placeholder="Email" className='inputForm' />
                         <input type="password" placeholder="Password" className='inputForm' />
-                        <button className='btnForm'>Sign Up</button>
+
+                        <button className='btnForm'> Sign Up</button>
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
@@ -40,7 +60,7 @@ const FormPage = () => {
                         <input type="email" placeholder="Email" className='inputForm' />
                         <input type="password" placeholder="Password" className='inputForm' />
                         <a href="#">Forgot your password?</a>
-                        <button className='btnForm1'>Sign In</button>
+                        <button id='btnForm1' onClick={this.handleClick}>Sign In</button>
                     </form>
                 </div>
                 <div class="overlay-container">
@@ -60,9 +80,13 @@ const FormPage = () => {
             </div>
         </main >
 
+    }
+}
 
 
-    );
-};
+
+
+
+
 
 export default FormPage;
