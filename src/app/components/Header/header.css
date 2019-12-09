@@ -13,7 +13,7 @@
 }
 
 .nav-link{
-    margin-top:-40px;
+    margin-top:-56px;
     color:white;
     
 } 
@@ -21,4 +21,7 @@
     color:lightsalmon;
   }
 
+  .main-logo:hover{
+color: lightsalmon;    
+  }
     
