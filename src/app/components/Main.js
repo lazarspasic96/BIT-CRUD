@@ -1,34 +1,31 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import FormPage from '../siginUp/FormPage';
-import Header from './Header/Header'
+import AboutPage from './AboutPage/AboutPage';
+import Checkbox from './Checkbox';
 
 
 class Main extends React.Component {
 
 
-
-
     render() {
-        return <>
+        return <> < Switch >
+            <Route exact path='/'>
+                <FormPage />
+            </Route>
 
-            <Switch>
-                <Route exact path='/'>
-                    <FormPage />
-                </Route>
+            <Route exact path='/about' >
+                <AboutPage />
 
-                <Route exact path='/about' >
+            </Route>
+        </Switch>
 
-                </Route>
-
-            </Switch>
 
         </>
-
-
-
     }
+
 }
+
 
 
 export default Main

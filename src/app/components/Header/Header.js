@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import AboutPage from "../AboutPage";
+import AboutPage from "../AboutPage/AboutPage";
 import './header.css'
 
 
@@ -9,7 +9,8 @@ class Header extends React.Component {
     render() {
         return <header class="page-header ">
             <div className = "header-container">
-                <h4 className="main-logo"> CRUD </h4>
+               <Link to='/' className="main-logo">  <h4 > CRUD </h4></Link>
+                
             <ul className="nav justify-content-end">
              <li className="nav-item">
                <a className="nav-link active" href="#">Posts</a>
