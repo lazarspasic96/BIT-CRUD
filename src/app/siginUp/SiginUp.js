@@ -1,4 +1,6 @@
 import React from 'react';
+import Checkbox from '../components/Checkbox';
+
 
 
 class SiginUp extends React.Component {
