@@ -1,13 +1,33 @@
 import React from 'react'
+import Input from '../components/Input'
+import Button from '../components/Button';
+import { http } from '../../../src/services/HttpService'
 
 
 
 
 class SiginIn extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            email: '',
+            password: ''
+        }
+    }
 
 
+    postdDtaHandler = () => {
+        const data = {
+            email: this.state.email,
+            password: this.state.password
+        }
 
+        http.post('auth/login', data)
+            .then((res) => {
+                console.log(res);
+            })
 
+    }
     render() {
         return <>
             <div class="form-container sign-in-container">
@@ -19,10 +39,11 @@ class SiginIn extends React.Component {
                         <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <span>or use your account</span>
-                    <input type="email" placeholder="Email" className='inputImportant' />
-                    <input type="password" placeholder="Password" className='inputImportant' />
+                    <Input type={'email'} onChange={(event) => this.setState({ email: event.target.value })} placeholder={'Email'} className={'inputImportant'} />
+                    <Input type={'password'} onChange={(event) => this.setState({ password: event.target.value })} placeholder={'Password'} className={'inputImportant'} />
                     <a href="#">Forgot your password?</a>
-                    <button className="btnImportant" >Sign In</button>
+                    <Button className={'btnImportant'} onClick={this.postdDtaHandler}>Sign In</Button>
+
                 </form>
             </div>
         </>
