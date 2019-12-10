@@ -16,7 +16,7 @@ class SiginIn extends React.Component {
     }
 
 
-    postdDtaHandler = () => {
+    logindDtaHandler = () => {
         const data = {
             email: this.state.email,
             password: this.state.password
@@ -42,7 +42,7 @@ class SiginIn extends React.Component {
                     <Input type={'email'} onChange={(event) => this.setState({ email: event.target.value })} placeholder={'Email'} className={'inputImportant'} />
                     <Input type={'password'} onChange={(event) => this.setState({ password: event.target.value })} placeholder={'Password'} className={'inputImportant'} />
                     <a href="#">Forgot your password?</a>
-                    <Button className={'btnImportant'} onClick={this.postdDtaHandler}>Sign In</Button>
+                    <Button className={'btnImportant'} onClick={this.logindDtaHandler}>Sign In</Button>
 
                 </form>
             </div>
