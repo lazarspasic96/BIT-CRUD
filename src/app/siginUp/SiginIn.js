@@ -17,7 +17,7 @@ class SiginIn extends React.Component {
     }
 
 
-    logindDtaHandler = () => {
+    logindDataHandler = () => {
         const data = {
             email: this.state.email,
             password: this.state.password
@@ -32,6 +32,8 @@ class SiginIn extends React.Component {
             })
 
     }
+
+
     render() {
         return <>
             <div class="form-container sign-in-container">
@@ -47,7 +49,7 @@ class SiginIn extends React.Component {
                     <Input type={'password'} onChange={(event) => this.setState({ password: event.target.value, error: '' })} placeholder={'Password'} className={'inputImportant'} />
                     <a href="#">Forgot your password?</a>
                     <span>{this.state.error}</span>
-                    <Button className={'btnImportant'} onClick={this.logindDtaHandler}>Sign In</Button>
+                    <Button className={'btnImportant'} onClick={this.logindDataHandler}>Sign In</Button>
 
                 </form>
             </div>
