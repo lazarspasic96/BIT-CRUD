@@ -12,7 +12,8 @@ class SiginUp extends React.Component {
         this.state = {
             name: '',
             email: '',
-            password: ''
+            password: '',
+            error: ''
 
         }
 
@@ -27,11 +28,13 @@ class SiginUp extends React.Component {
         }
         http.post('auth/register', data)
             .then((res) => {
-                console.log(res);
-
+                //console.log(res);
             })
+            .catch((error) => {
 
-
+                this.state.error = error.response.data.message
+                console.log('greska', error.response.data.message);
+            })
     }
 
 
