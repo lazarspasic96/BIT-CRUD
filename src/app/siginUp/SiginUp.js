@@ -28,6 +28,7 @@ class SiginUp extends React.Component {
         }
         http.post('auth/register', data)
             .then((res) => {
+                this.props.history.push('/')
                 //console.log(res);
             })
             .catch((error) => {
