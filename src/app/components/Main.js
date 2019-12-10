@@ -16,8 +16,6 @@ class Main extends React.Component {
 
             <Route exact path='/about' >
                 <AboutPage />
-
-
             </Route>
         </Switch>
 

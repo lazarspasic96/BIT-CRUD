@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../components/Button'
+
 
 
 class OverlayPanel extends React.Component {
