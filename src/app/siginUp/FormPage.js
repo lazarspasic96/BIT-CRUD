@@ -31,7 +31,7 @@ class FormPage extends React.Component {
         return <main className='mainFormPage'>
             <div className={"container containerHomePage" + ' ' + addOverlay} id="container">
                 <SiginUp history={this.props.history} />
-                <SiginIn />
+                <SiginIn history={this.props.history} />
                 <OverlayPanel handleClick={this.handleClick} />
             </div >
         </main >

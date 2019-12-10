@@ -11,7 +11,8 @@ class SiginIn extends React.Component {
         super(props)
         this.state = {
             email: '',
-            password: ''
+            password: '',
+            error: ''
         }
     }
 
@@ -24,7 +25,10 @@ class SiginIn extends React.Component {
 
         http.post('auth/login', data)
             .then((res) => {
-                console.log(res);
+                this.props.history.push('/dashboard')
+            })
+            .catch((error) => {
+                this.setState({ error: error.response.data.message })
             })
 
     }
@@ -39,9 +43,10 @@ class SiginIn extends React.Component {
                         <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <span>or use your account</span>
-                    <Input type={'email'} onChange={(event) => this.setState({ email: event.target.value })} placeholder={'Email'} className={'inputImportant'} />
-                    <Input type={'password'} onChange={(event) => this.setState({ password: event.target.value })} placeholder={'Password'} className={'inputImportant'} />
+                    <Input type={'email'} onChange={(event) => this.setState({ email: event.target.value, error: '' })} placeholder={'Email'} className={'inputImportant'} />
+                    <Input type={'password'} onChange={(event) => this.setState({ password: event.target.value, error: '' })} placeholder={'Password'} className={'inputImportant'} />
                     <a href="#">Forgot your password?</a>
+                    <span>{this.state.error}</span>
                     <Button className={'btnImportant'} onClick={this.logindDtaHandler}>Sign In</Button>
 
                 </form>
