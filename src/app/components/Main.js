@@ -10,9 +10,7 @@ class Main extends React.Component {
 
     render() {
         return <> < Switch >
-            <Route exact path='/'>
-                <FormPage />
-            </Route>
+            <Route exact path='/' component={FormPage} />
 
             <Route exact path='/about' >
                 <AboutPage />

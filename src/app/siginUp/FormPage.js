@@ -30,7 +30,7 @@ class FormPage extends React.Component {
         const addOverlay = this.state.overlayForm ? '' : 'right-panel-active';
         return <main className='mainFormPage'>
             <div className={"container containerHomePage" + ' ' + addOverlay} id="container">
-                <SiginUp />
+                <SiginUp history={this.props.history} />
                 <SiginIn />
                 <OverlayPanel handleClick={this.handleClick} />
             </div >
