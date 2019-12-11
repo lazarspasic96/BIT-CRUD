@@ -1,0 +1,39 @@
+.card-text {
+    color:white;
+    padding:10px 0 0 0 ;
+    font-size: 12px;
+    margin: 0 auto;
+    font-weight: 200;
+    
+}
+
+.card-title {  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding:50px 0 0px 20px;
+    display:inline-block;
+}
+
+.card-container{
+    margin:0 auto;
+    
+}
+
+.card-background{
+background-color:#4154b3;
+
+}
+
+
+.post-title {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.subtitle-text{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:5px 0 0 0 ;
+}

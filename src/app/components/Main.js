@@ -4,6 +4,7 @@ import FormPage from '../siginUp/FormPage';
 import AboutPage from './AboutPage/AboutPage';
 import Checkbox from './Checkbox';
 import Header from './Header/Header';
+import PostPage from './Post/PostPage'
 
 class Main extends React.Component {
 
@@ -14,6 +15,16 @@ class Main extends React.Component {
 
             <Route exact path='/about' component={AboutPage} />
 
+<<<<<<< HEAD
+            <Route exact path='/about' >
+                <AboutPage />
+            </Route>
+
+            <Route exact path='/post-page'>
+                <PostPage />
+            </Route>
+=======
+>>>>>>> master
         </Switch>
 
 
