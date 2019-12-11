@@ -11,10 +11,11 @@ class Main extends React.Component {
 
     render() {
         return <> < Switch >
-            <Route exact path='/'>
-                <FormPage />
-            </Route>
+            <Route exact path='/' component={FormPage} />
 
+            <Route exact path='/about' component={AboutPage} />
+
+<<<<<<< HEAD
             <Route exact path='/about' >
                 <AboutPage />
             </Route>
@@ -22,6 +23,8 @@ class Main extends React.Component {
             <Route exact path='/post-page'>
                 <PostPage />
             </Route>
+=======
+>>>>>>> master
         </Switch>
 
 
