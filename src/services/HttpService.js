@@ -9,9 +9,7 @@ class HttpService {
             headers: {
                 'Content-Type': 'application/json',
 
-                'x-api-key': 'B1tD3V' /* ovo je sifra iz projekta za Apija, nema veze sa axious*/
-
-                'x-api-key': 'B1tD3V',
+                'x-api-key': 'B1tD3V' /* ovo je sifra iz projekta za Apija, nema veze sa axious*/,
                 'Authorization': `Bearer ${localStorage.getItem('jwtToken')}`,
 
             }

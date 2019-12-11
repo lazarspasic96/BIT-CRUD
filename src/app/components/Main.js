@@ -15,16 +15,11 @@ class Main extends React.Component {
 
             <Route exact path='/about' component={AboutPage} />
 
-<<<<<<< HEAD
-            <Route exact path='/about' >
-                <AboutPage />
-            </Route>
 
-            <Route exact path='/post-page'>
-                <PostPage />
-            </Route>
-=======
->>>>>>> master
+
+            <Route exact path='/post-page' component={PostPage} />
+
+
         </Switch>
 
 

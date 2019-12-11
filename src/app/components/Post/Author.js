@@ -20,28 +20,14 @@ class Author extends React.Component {
     }
     render() {
 
-       
-            
-        })
-
-
         return (
             <main className="author-main">
                 <h3>Author</h3>
                 <div className="row">
-                    {this.state.author.map(author => <Author author={author} />)}
+
                 </div>
             </main>
         )
-
-
-
-
-
-
-
-
-
     }
 }
 

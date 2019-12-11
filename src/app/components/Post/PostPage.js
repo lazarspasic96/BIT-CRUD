@@ -34,7 +34,6 @@ class PostPage extends React.Component {
                 </div>
 
 
-                <Author />
 
             </main>
         )
