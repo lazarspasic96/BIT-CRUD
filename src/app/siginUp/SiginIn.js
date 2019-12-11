@@ -24,10 +24,9 @@ class SiginIn extends React.Component {
         }
 
         http.post('auth/login', data)
-            .then((res) => {
-                console.log(res);
-                console.log(localStorage.setItem('jwtToken', res.data.accessToken));
 
+            .then((res) => {
+                localStorage.setItem('jwtToken', res.data.accessToken)
                 this.props.history.push('/dashboard')
             })
             .catch((error) => {
