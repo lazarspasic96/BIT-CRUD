@@ -3,6 +3,7 @@ import pic from './img/picture1.jpg'
 import './card.css';
 import './post.css'
 import CommentTotal from '../CommentDisplay/CommentTotal';
+import AuthorName from '../Author/AuthorName'
 
 
 
@@ -34,6 +35,8 @@ class PostCard extends React.Component {
                 <p class="card-text"> {post.text}</p>
                 <hr />
                 <CommentTotal postId={post.id} />
+                <AuthorName userId={post.userId} />
+
 
               </div>
 

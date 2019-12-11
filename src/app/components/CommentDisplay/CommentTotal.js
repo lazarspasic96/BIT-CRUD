@@ -22,7 +22,7 @@ class CommentTotal extends React.Component {
 
 
     render() {
-        return <> {this.state.comments.length} </>
+        return <>  Comments: {this.state.comments.length} </>
     }
 
 }
