@@ -13,7 +13,8 @@ class SiginUp extends React.Component {
             name: '',
             email: '',
             password: '',
-            error: ''
+            error: '',
+
 
         }
 
@@ -26,14 +27,18 @@ class SiginUp extends React.Component {
             password: this.state.password
 
         }
+
         http.post('auth/register', data)
-            .then((res) => {
-                //console.log(res);
+            .then(() => {
+
+
+                this.props.history.push('/about')
+
+
             })
             .catch((error) => {
 
-                this.state.error = error.response.data.message
-                console.log('greska', error.response.data.message);
+                this.setState({ error: error.response.data.message })
             })
     }
 
@@ -51,9 +56,10 @@ class SiginUp extends React.Component {
                         <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <span>or use your email for registration</span>
-                    <Input type={'text'} placeholder={'Name'} className={'inputImportant'} onChange={(event) => this.setState({ name: event.target.value })} />
-                    <Input type={'email'} placeholder={'Email'} className={'inputImportant'} onChange={(event) => this.setState({ email: event.target.value })} />
-                    <Input type={'password'} placeholder={'Password'} className={'inputImportant'} onChange={(event) => this.setState({ password: event.target.value })} />
+                    <Input type={'text'} placeholder={'Name'} className={'inputImportant'} onChange={(event) => this.setState({ name: event.target.value, error: '' })} />
+                    <Input type={'email'} placeholder={'Email'} className={'inputImportant'} onChange={(event) => this.setState({ email: event.target.value, error: '' })} />
+                    <Input type={'password'} placeholder={'Password'} className={'inputImportant'} onChange={(event) => this.setState({ password: event.target.value, error: '' })} />
+                    <span>{this.state.error}</span>
                     <Button className={'btnImportant'} onClick={this.signInHandler}>Sign Up</Button>
 
                 </form>
