@@ -70,4 +70,6 @@ class SiginUp extends React.Component {
     }
 }
 
-export default SiginUp
+export default SiginUp;
+
+
