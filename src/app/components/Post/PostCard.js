@@ -2,6 +2,7 @@ import React from 'react';
 import pic from './img/picture1.jpg'
 import './card.css';
 import './post.css'
+import CommentTotal from '../CommentDisplay/CommentTotal';
 
 
 
@@ -32,6 +33,8 @@ class PostCard extends React.Component {
                 <p className="subtitle-text">{post.subtitle}</p>
                 <p class="card-text"> {post.text}</p>
                 <hr />
+                <CommentTotal postId={post.id} />
+
               </div>
 
 

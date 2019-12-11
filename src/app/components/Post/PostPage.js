@@ -5,7 +5,7 @@ import './post.css';
 
 import { http } from '../../../services/HttpService';
 
-import Author from './Author';
+
 
 class PostPage extends React.Component {
     constructor(props) {
@@ -31,6 +31,7 @@ class PostPage extends React.Component {
                 <h4>All Posts</h4>
                 <div className="row">
                     {this.state.posts.map(post => <PostCard post={post} />)}
+
                 </div>
 
 
