@@ -12,7 +12,8 @@ class SiginIn extends React.Component {
         this.state = {
             email: '',
             password: '',
-            error: ''
+            error: '',
+
         }
     }
 
@@ -28,9 +29,12 @@ class SiginIn extends React.Component {
             .then((res) => {
                 localStorage.setItem('jwtToken', res.data.accessToken)
                 this.props.history.push('/dashboard')
+
+
             })
             .catch((error) => {
                 this.setState({ error: error.response.data.message })
+
             })
 
     }

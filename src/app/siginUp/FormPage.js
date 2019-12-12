@@ -4,7 +4,7 @@ import Checkbox from "../components/Checkbox";
 import SiginUp from "./SiginUp";
 import SiginIn from "./SiginIn";
 import OverlayPanel from "./OverlayPanel";
-/* import './SiginUpInteractive.js' */
+
 
 
 

@@ -2,7 +2,6 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import PostCard from './PostCard';
 import './post.css';
-
 import { http } from '../../../services/HttpService';
 
 

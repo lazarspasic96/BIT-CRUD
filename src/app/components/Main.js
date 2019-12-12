@@ -6,22 +6,17 @@ import Checkbox from './Checkbox';
 import Header from './Header/Header';
 import PostPage from './Post/PostPage'
 
+
 class Main extends React.Component {
 
 
     render() {
-        return <> < Switch >
-            <Route exact path='/' component={FormPage} />
-
-            <Route exact path='/about' component={AboutPage} />
-
-
-
-            <Route exact path='/post-page' component={PostPage} />
-
-
-        </Switch>
-
+        return <>
+            <Switch>
+                <Route exact path='/form-page' component={FormPage} />
+                <Route exact path='/about' component={AboutPage} />
+                <Route exact path='/' component={PostPage} />
+            </Switch>
 
         </>
 

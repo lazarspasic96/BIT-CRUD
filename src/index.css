@@ -16,10 +16,20 @@ code {
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 
+
+
+/*FOOTER STYLE PUBLIC AND PRIVATE */
   #bg-color-footer {
     background-color: #203b6e;
+    position: relative;
 
   }
+
+  
+
+
+
+
 
 
 
