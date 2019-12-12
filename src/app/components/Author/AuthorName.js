@@ -7,7 +7,7 @@ class AuthorName extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            authorname: null
+            author: {}
         }
 
     }
@@ -15,13 +15,15 @@ class AuthorName extends React.Component {
     componentDidMount() {
         authorService.getAuthorName(this.props.userId)
             .then(author => {
-                this.setState({ authorname: author })
+
+                this.setState({ author: author })
+
             })
 
     }
 
     render() {
-        return <> AuthorName: {this.props.name} </>
+        return <> AuthorName: {this.state.author.name}</>
     }
 }
 

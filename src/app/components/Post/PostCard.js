@@ -15,7 +15,7 @@ class PostCard extends React.Component {
 
     return (
 
-      <div className="col-4">
+      <div className="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
         <div className="card-container">
 
 
@@ -36,16 +36,9 @@ class PostCard extends React.Component {
                 <hr />
                 <CommentTotal postId={post.id} />
                 <AuthorName userId={post.userId} />
-
-
               </div>
-
-
-
             </div>
-
           </div>
-
         </div>
       </div>
     )
