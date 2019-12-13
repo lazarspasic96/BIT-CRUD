@@ -21,11 +21,23 @@ code {
 /*FOOTER STYLE PUBLIC AND PRIVATE */
   #bg-color-footer {
     background-color: #203b6e;
-    position: relative;
+
 
   }
+ .flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  
+.sign-out {
+  margin-right: 7px;
+  border-radius: 10px;
+  padding: 7px;
+
+}
+
+
 
 
 

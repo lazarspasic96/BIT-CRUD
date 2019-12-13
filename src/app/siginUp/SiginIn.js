@@ -18,7 +18,8 @@ class SiginIn extends React.Component {
     }
 
 
-    logindDataHandler = () => {
+    logindDataHandler = (event) => {
+        event.preventDefault()
         const data = {
             email: this.state.email,
             password: this.state.password
@@ -29,14 +30,13 @@ class SiginIn extends React.Component {
             .then((res) => {
                 localStorage.setItem('jwtToken', res.data.accessToken)
                 this.props.history.push('/dashboard')
-
-
             })
             .catch((error) => {
+                console.log(error.response.data);
+
+
                 this.setState({ error: error.response.data.message })
-
             })
-
     }
 
 

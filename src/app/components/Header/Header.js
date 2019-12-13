@@ -35,7 +35,7 @@ class Header extends React.Component {
                         </li>
                         <li className="nav-item">
 
-                            <Link to="/my-posts" className="nav-link">My Posts</Link>
+                            <Link to="/dashboard/my-posts" className="nav-link">My Posts</Link>
                         </li>
                     </ul>
                 </div>
